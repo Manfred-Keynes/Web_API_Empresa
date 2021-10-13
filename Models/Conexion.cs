@@ -3,6 +3,8 @@ namespace web_api_db.Models{
     class Conexion : DbContext{
         public Conexion (DbContextOptions<Conexion> options) : base (options){}
         public DbSet<Clientes> Clientes {get;set;}
+        public DbSet<Puestos> Puestos {get;set;}
+        public DbSet<Empleados> Empleados {get;set;}
 
 
     }
